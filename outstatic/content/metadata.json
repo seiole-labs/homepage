@@ -1,6 +1,6 @@
 {
-  "commit": "298cef17d1cf9979d37a14c0a77d20f21f5b728f",
-  "generated": "2026-07-22T12:16:51.083Z",
+  "commit": "cbc8387ae9538af904d10bd67563739b6bfa8ef1",
+  "generated": "2026-07-22T12:17:23.688Z",
   "metadata": [
     {
       "__outstatic": {
@@ -118,8 +118,8 @@
     },
     {
       "__outstatic": {
-        "commit": "298cef17d1cf9979d37a14c0a77d20f21f5b728f",
-        "hash": "2166693538",
+        "commit": "cbc8387ae9538af904d10bd67563739b6bfa8ef1",
+        "hash": "3000515751",
         "path": "outstatic/content/posts/how-to-create-an-outstatic-blog.md"
       },
       "author": {
