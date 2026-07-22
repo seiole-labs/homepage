@@ -1,6 +1,6 @@
 {
-  "commit": "78b37edc01d42309bcf96d338e91f5e1c6b560d8",
-  "generated": "2026-07-22T12:23:33.018Z",
+  "commit": "9090a12dc00820b0291592c3db46c9800957d15c",
+  "generated": "2026-07-22T12:24:17.302Z",
   "metadata": [
     {
       "__outstatic": {
@@ -18,33 +18,6 @@
       "slug": "the-wrong-decision",
       "status": "published",
       "title": "If you want to make the wrong decision, ask everyone"
-    },
-    {
-      "__outstatic": {
-        "commit": "0000000000000000000000000000000000000000",
-        "hash": "0",
-        "path": "/outstatic/content/posts/using-mdx.mdx"
-      },
-      "author": {
-        "name": "Andre Vitorio"
-      },
-      "collection": "posts",
-      "coverImage": "/images/jupiter-spaceship.png",
-      "description": "Embed React components in your posts with the MDX block.",
-      "publishedAt": "2026-05-11T12:00:00.000Z",
-      "slug": "using-mdx",
-      "status": "published",
-      "tags": [
-        {
-          "label": "Outstatic",
-          "value": "outstatic"
-        },
-        {
-          "label": "NextJs",
-          "value": "nextJs"
-        }
-      ],
-      "title": "Using MDX"
     },
     {
       "__outstatic": {
