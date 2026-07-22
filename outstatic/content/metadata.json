@@ -1,6 +1,6 @@
 {
-  "commit": "9090a12dc00820b0291592c3db46c9800957d15c",
-  "generated": "2026-07-22T12:24:17.302Z",
+  "commit": "6e2f477a6f733aab49927985225c0cb8aa0f66ab",
+  "generated": "2026-07-22T12:24:22.346Z",
   "metadata": [
     {
       "__outstatic": {
@@ -70,26 +70,6 @@
       "slug": "flycream-travel",
       "status": "published",
       "title": "Flycream Travel"
-    },
-    {
-      "__outstatic": {
-        "commit": "cbc8387ae9538af904d10bd67563739b6bfa8ef1",
-        "hash": "3000515751",
-        "path": "outstatic/content/posts/how-to-create-an-outstatic-blog.md"
-      },
-      "author": {
-        "name": "Ninad Sonawane",
-        "picture": "https://avatars.githubusercontent.com/u/305013244?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/jupiter-spaceship.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur.",
-      "publishedAt": "2022-07-14T02:34:02.322Z",
-      "slug": "how-to-create-an-outstatic-blog",
-      "status": "published",
-      "tags": [
-      ],
-      "title": "Learn with Seiole Labs"
     },
     {
       "__outstatic": {
