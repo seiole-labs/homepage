@@ -1,6 +1,6 @@
 {
-  "commit": "4b8ca15309d4a1e235ba3f30a95acb6fe267baa6",
-  "generated": "Mon, 06 Feb 2023 00:55:33 GMT",
+  "commit": "62a77c2931b6853ee7aace6821ac80bb24969b92",
+  "generated": "2026-07-22T12:13:09.298Z",
   "metadata": [
     {
       "__outstatic": {
@@ -22,28 +22,6 @@
     },
     {
       "__outstatic": {
-        "commit": "bf4993b965319da4cb9de4a3810fb4af12bdebd6",
-        "hash": "2596208214",
-        "path": "/outstatic/content/posts/how-to-create-an-outstatic-blog.md"
-      },
-      "author": {
-        "name": "Andre Vitorio"
-      },
-      "collection": "posts",
-      "coverImage": "/images/jupiter-spaceship.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-      "publishedAt": "2022-07-14T02:34:02.322Z",
-      "slug": "how-to-create-an-outstatic-blog",
-      "status": "published",
-      "title": "Learn how to create your blog with Outstatic",
-      "tags": [
-        { "label": "NextJs", "value": "nextJs" },
-        { "label": "GitHub", "value": "gitHub" },
-        { "label": "Outstatic", "value": "outstatic" }
-      ]
-    },
-    {
-      "__outstatic": {
         "commit": "998b7f74af83e46bbdb4ab5302c8e4c39963278f",
         "hash": "3707858083",
         "path": "/outstatic/content/posts/the-wrong-decision.md"
@@ -59,7 +37,6 @@
       "status": "published",
       "title": "If you want to make the wrong decision, ask everyone"
     },
-
     {
       "__outstatic": {
         "commit": "0000000000000000000000000000000000000000",
@@ -75,11 +52,17 @@
       "publishedAt": "2026-05-11T12:00:00.000Z",
       "slug": "using-mdx",
       "status": "published",
-      "title": "Using MDX",
       "tags": [
-        { "label": "Outstatic", "value": "outstatic" },
-        { "label": "NextJs", "value": "nextJs" }
-      ]
+        {
+          "label": "Outstatic",
+          "value": "outstatic"
+        },
+        {
+          "label": "NextJs",
+          "value": "nextJs"
+        }
+      ],
+      "title": "Using MDX"
     },
     {
       "__outstatic": {
@@ -132,6 +115,38 @@
       "slug": "flycream-travel",
       "status": "published",
       "title": "Flycream Travel"
+    },
+    {
+      "__outstatic": {
+        "commit": "62a77c2931b6853ee7aace6821ac80bb24969b92",
+        "hash": "4171400832",
+        "path": "outstatic/content/posts/how-to-create-an-outstatic-blog.md"
+      },
+      "author": {
+        "name": "Ninad Sonawane",
+        "picture": "https://avatars.githubusercontent.com/u/305013244?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/jupiter-spaceship.png",
+      "description": "Lorem ipsum dolor sit amet, consectetur.",
+      "publishedAt": "2022-07-14T02:34:02.322Z",
+      "slug": "how-to-create-an-outstatic-blog",
+      "status": "published",
+      "tags": [
+        {
+          "label": "NextJs",
+          "value": "nextJs"
+        },
+        {
+          "label": "GitHub",
+          "value": "gitHub"
+        },
+        {
+          "label": "Outstatic",
+          "value": "outstatic"
+        }
+      ],
+      "title": "Learn with Seiole Labs"
     }
   ]
 }
