@@ -1,6 +1,6 @@
 {
-  "commit": "39b0a781bade0cd400f77cf7e6b3604702ae2c43",
-  "generated": "2026-07-24T09:24:03.585Z",
+  "commit": "291c30a8cc614030285d892bfc216fbbc0d2802d",
+  "generated": "2026-07-24T09:24:09.323Z",
   "metadata": [
     {
       "__outstatic": {
@@ -91,8 +91,8 @@
     },
     {
       "__outstatic": {
-        "commit": "39b0a781bade0cd400f77cf7e6b3604702ae2c43",
-        "hash": "1079923709",
+        "commit": "291c30a8cc614030285d892bfc216fbbc0d2802d",
+        "hash": "4114190392",
         "path": "outstatic/content/posts/test.mdx"
       },
       "author": {
@@ -102,7 +102,7 @@
       "collection": "posts",
       "publishedAt": "2026-07-24T09:56:53.987Z",
       "slug": "test",
-      "status": "draft",
+      "status": "published",
       "tags": [
       ],
       "title": "test"
