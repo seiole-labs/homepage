@@ -1,6 +1,6 @@
 {
-  "commit": "291c30a8cc614030285d892bfc216fbbc0d2802d",
-  "generated": "2026-07-24T09:24:09.323Z",
+  "commit": "4d24044d54c52658c719a66b6b58c659b602a04f",
+  "generated": "2026-07-25T05:52:26.853Z",
   "metadata": [
     {
       "__outstatic": {
@@ -88,24 +88,6 @@
       "slug": "home",
       "status": "published",
       "title": "Home"
-    },
-    {
-      "__outstatic": {
-        "commit": "291c30a8cc614030285d892bfc216fbbc0d2802d",
-        "hash": "4114190392",
-        "path": "outstatic/content/posts/test.mdx"
-      },
-      "author": {
-        "name": "",
-        "picture": "https://avatars.githubusercontent.com/u/305013244?v=4"
-      },
-      "collection": "posts",
-      "publishedAt": "2026-07-24T09:56:53.987Z",
-      "slug": "test",
-      "status": "published",
-      "tags": [
-      ],
-      "title": "test"
     }
   ]
 }
