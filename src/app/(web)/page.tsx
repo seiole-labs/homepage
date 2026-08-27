@@ -10,7 +10,7 @@ export default async function Index() {
   return (
     <Layout>
       <div className="max-w-6xl mx-auto px-5">
-        <section className="mt-16 mb-16 md:mb-12 prose lg:prose-lg home-intro">
+        <section className="mt-16 mb-16 md:mb-12 prose lg:prose-lg max-w-none home-intro">
           <MDXComponent content={content} />
         </section>
         {allPosts.length > 0 && (
@@ -21,6 +21,7 @@ export default async function Index() {
             priority
           />
         )}
+        {/* TEMP: projects section disabled
         {allProjects.length > 0 && (
           <ContentGrid
             title="Projects"
@@ -28,6 +29,7 @@ export default async function Index() {
             collection="projects"
           />
         )}
+        */}
       </div>
     </Layout>
   )

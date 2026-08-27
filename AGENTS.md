@@ -4,6 +4,8 @@
 
 Next.js 16 + Tailwind CSS v4 landing page for Seiole Labs. Content managed via **Outstatic** (Git-based CMS). Package manager: **pnpm**.
 
+
+
 ## Commands
 
 ```bash
@@ -45,7 +47,7 @@ src/app/
 - Content fetched via `outstatic/server` `load()` function
 - MDX compiled server-side via `mdx-bundler` (`src/lib/mdx-server.ts`)
 - MDX rendered client-side via `getMDXComponent` (`src/components/mdx/mdx-component.tsx`)
-- Custom MDX components registered in `MDXComponentsMap`: Callout, Counter, ApiFetcher, Youtube, CustomCode, CustomLink, Image
+- Custom MDX components registered in `MDXComponentsMap` (`src/components/mdx/mdx-component.tsx`): `Callout`, `Counter`, `ApiFetcher`, `Youtube`, `CustomCode`, `Pre`, `CustomLink`, `Image`, plus an `img` override
 
 ## Key Conventions
 
@@ -60,3 +62,11 @@ src/app/
 - `src/lib/api.ts` — legacy filesystem-based API referencing nonexistent `src/_posts/`. Unused.
 - `src/lib/constants.ts` — exports `EXAMPLE_PATH`, unused.
 - `src/components/Meta.tsx` — legacy `<Head>` component, unused (layout uses Next.js Metadata API).
+
+## Template Remnants
+
+The app is cloned from the **outstatic-basic-blog** starter and only partially rebranded to Seiole Labs:
+
+- `package.json` name is still `outstatic-basic-blog`.
+- `src/app/(web)/layout.tsx` hardcodes branding in Metadata: `metadataBase` points at `https://outstatic.com`, plus Outstatic titles/descriptions/og-image. The layout is the site's only root metadata, so rebranding means editing here.
+- Site OG fallbacks reference `/images/og-image.png` (see posts/projects `generateMetadata`).

@@ -10,8 +10,7 @@ coverImage: ""
 publishedAt: 2022-03-17T05:35:07.322Z
 ---
 
-## Hello!
 
-## We are seiole Labs.
+## We are Seiole Labs.
 
-Energy will be the biggest bottleneck of our lifetimes for human explorations.
+Energy will be one of the biggest bottlenecks of our lifetime for human progress in AI and space exploration.

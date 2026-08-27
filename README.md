@@ -1,6 +1,106 @@
-# A statically generated blog example using Outstatic and Next.js
+# Seiole Labs — Homepage
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Favitorio%2Foutstatic%2Ftree%2Fmain%2Fexamples%2Fbasic-blog&project-name=outstatic-blog&repo-name=outstatic-blog&demo-title=Outstatic%20Blog%20Demo&demo-description=A%20statically%20generated%20blog%20example%20using%20Outstatic&demo-url=https%3A%2F%2Foutstatic-example-blog.vercel.app%2F&demo-image=https%3A%2F%2Foutstatic.com%2Fimages%2Foutstatic-demo.png&envDescription=API%20Keys%20needed%20for%20installation&envLink=https%3A%2F%2Foutstatic.com%2Fdocs%2Fenvironment-variables)
+Official homepage for **Seiole Labs**.
 
-Please, visit our [getting started](https://outstatic.com/docs/getting-started) guide.
-Don't forget to check the `.env.local.example` file for environment variables.
+## Getting Started
+
+### Install dependencies
+
+```bash
+pnpm install
+```
+
+### Run locally
+
+```bash
+pnpm dev
+```
+
+Open http://localhost:3000 in your browser.
+
+### Build for production
+
+```bash
+pnpm build
+pnpm start
+```
+
+## Content Management (Outstatic CMS)
+
+Posts, pages, and projects are managed through **Outstatic** — a Git-based CMS that commits content directly to this repository.
+
+### 1. Set up the environment (`.env.local`)
+
+Copy the example and fill in the values:
+
+```bash
+cp .env.local.example .env.local
+```
+
+Required variables:
+
+```
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+OST_GITHUB_ID=<GitHub OAuth App Client ID>
+OST_GITHUB_SECRET=<GitHub OAuth App Client Secret>
+OST_REPO_SLUG=homepage
+OST_REPO_OWNER=seiole-labs
+```
+
+### 2. Create a GitHub OAuth App
+
+1. Go to **GitHub → Settings → Developer settings → OAuth Apps → New OAuth App**
+2. Fill in:
+   - **Application name**: e.g. `homepage`
+   - **Homepage URL**: `http://localhost:3000`
+   - **Authorization callback URL**: `http://localhost:3000/api/outstatic/callback`
+3. Enable the **repo** scope.
+4. Copy the **Client ID** and **Client secret** into your `.env.local` (`OST_GITHUB_ID` / `OST_GITHUB_SECRET`).
+5. If the repo lives under an org, **approve the OAuth app** in the org's OAuth application policy (otherwise login fails with a 404 after the callback).
+
+> **Note:** `.env.local` is gitignored — never commit it.
+
+### 3. Open the CMS dashboard
+
+```bash
+pnpm dev
+```
+
+Then visit:
+
+```
+http://localhost:3000/outstatic
+```
+
+Click **Sign in with GitHub** using an account with write access to the repo.
+
+> The backend API lives at `/api/outstatic` — you don't need to use it directly; the dashboard at `/outstatic` is the UI.
+
+### 4. Manage posts/articles (CRUD)
+
+From the dashboard:
+
+- **Create**: Posts → **New Post** → fill out title, content (Markdown/MDX), cover image, tags, status → **Save Draft** or **Publish**.
+- **Read**: Click any post in the list to view/edit it.
+- **Update**: Edit the content in the editor, then **Save** — publishing updates the published version.
+- **Delete**: From a post's edit page, use the **Delete** action (or delete the file in `outstatic/content/posts/`).
+
+Changes are committed to this Git repo automatically (you'll see commits like `[outstatic:content]`). Pull them down locally with `git pull` to see edits in your local build.
+
+### Editing content directly
+
+Content lives in `outstatic/content/`:
+
+- `pages/` — landing page sections
+- `posts/` — blog posts/articles
+- `projects/` — projects
+
+You can edit these Markdown files directly and commit them, without using the dashboard.
+
+## Tech Stack
+
+* Next.js
+* React
+* Tailwind CSS
+* TypeScript
+* Outstatic (CMS)
