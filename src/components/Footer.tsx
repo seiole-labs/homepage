@@ -10,14 +10,14 @@ const Footer = () => {
       >
         <p
           style={{
-            fontFamily: '"EB Garamond", serif',
+            fontFamily: 'var(--font-serif)',
             fontSize: 32,
-            fontWeight: 100,
+            fontWeight: 400,
             textAlign: 'center',
             marginBottom: 24,
           }}
         >
-          Help build the future of Energy
+          Help us build the future of Energy
         </p>
         <a
           href="/careers"
@@ -31,7 +31,7 @@ const Footer = () => {
         >
           <span
             style={{
-              fontFamily: '"VT323", monospace',
+              fontFamily: 'var(--font-pixel)',
               fontSize: 28,
               letterSpacing: '0.03em',
             }}
@@ -40,7 +40,7 @@ const Footer = () => {
           </span>
           <span
             style={{
-              fontFamily: '"VT323", monospace',
+              fontFamily: 'var(--font-pixel)',
               fontSize: 24,
               letterSpacing: '0.03em',
             }}
@@ -71,9 +71,9 @@ const Footer = () => {
               href="/"
               className="no-underline text-black"
               style={{
-                fontFamily: '"EB Garamond", serif',
+                fontFamily: 'var(--font-serif)',
                 fontSize: 18,
-                fontWeight: 100,
+                fontWeight: 400,
               }}
             >
               Home
@@ -82,9 +82,9 @@ const Footer = () => {
               href="/#posts"
               className="no-underline text-black"
               style={{
-                fontFamily: '"EB Garamond", serif',
+                fontFamily: 'var(--font-serif)',
                 fontSize: 18,
-                fontWeight: 100,
+                fontWeight: 400,
               }}
             >
               Posts
@@ -93,9 +93,9 @@ const Footer = () => {
               href="mailto:seiolelabs@gmail.com"
               className="no-underline text-black"
               style={{
-                fontFamily: '"EB Garamond", serif',
+                fontFamily: 'var(--font-serif)',
                 fontSize: 18,
-                fontWeight: 100,
+                fontWeight: 400,
               }}
             >
               Contact
@@ -104,9 +104,9 @@ const Footer = () => {
               href="/careers"
               className="no-underline text-black"
               style={{
-                fontFamily: '"EB Garamond", serif',
+                fontFamily: 'var(--font-serif)',
                 fontSize: 18,
-                fontWeight: 100,
+                fontWeight: 400,
               }}
             >
               Careers
@@ -126,7 +126,7 @@ const Footer = () => {
             width: '100%',
             maxWidth: 1120,
             borderBottom: '0.5px solid #000',
-            marginBottom: 40,
+            marginBottom: 20,
           }}
         />
 
@@ -137,7 +137,7 @@ const Footer = () => {
           {/* Logo */}
           <p
             style={{
-              fontFamily: '"VT323", monospace',
+              fontFamily: 'var(--font-pixel)',
               fontSize: 60,
               letterSpacing: '0.04em',
               lineHeight: '72%',
@@ -152,12 +152,12 @@ const Footer = () => {
           {/* Copyright */}
           <p
             style={{
-              fontFamily: '"VT323", monospace',
+              fontFamily: 'var(--font-pixel)',
               fontSize: 60,
               letterSpacing: '0.04em',
               lineHeight: '72%',
               textAlign: 'right',
-              margin: 0,
+              marginBottom: 50,
             }}
           >
             ©

@@ -9,7 +9,7 @@ export default function Careers() {
       >
         <h1
           style={{
-            fontFamily: '"VT323", monospace',
+            fontFamily: 'var(--font-pixel)',
             fontSize: 48,
             letterSpacing: '0.04em',
             textTransform: 'uppercase',
@@ -20,9 +20,9 @@ export default function Careers() {
         </h1>
         <p
           style={{
-            fontFamily: '"EB Garamond", serif',
+            fontFamily: 'var(--font-serif)',
             fontSize: 22,
-            fontWeight: 400,
+            fontWeight: 100,
             lineHeight: 1.6,
             maxWidth: 600,
             textAlign: 'center',
@@ -41,7 +41,7 @@ export default function Careers() {
           href="/"
           className="no-underline text-black mt-12"
           style={{
-            fontFamily: '"EB Garamond", serif',
+            fontFamily: 'var(--font-serif)',
             fontSize: 20,
             textDecoration: 'underline',
           }}

@@ -1,6 +1,24 @@
 import { absoluteUrl } from '@/lib/utils'
 import { Metadata } from 'next'
+import localFont from 'next/font/local'
 import '@/styles/index.css'
+
+const serrif = localFont({
+  src: [
+    { path: '../../../public/fonts/Serrif-TRIAL-Thin.otf', weight: '100', style: 'normal' },
+    { path: '../../../public/fonts/Serrif-TRIAL-ThinItalic.otf', weight: '100', style: 'italic' },
+    { path: '../../../public/fonts/Serrif-TRIAL-Regular.otf', weight: '400', style: 'normal' },
+    { path: '../../../public/fonts/Serrif-TRIAL-RegularItalic.otf', weight: '400', style: 'italic' },
+  ],
+  variable: '--font-serif',
+  display: 'swap',
+})
+
+const neuebit = localFont({
+  src: '../../../public/fonts/ppneuebit-bold.otf',
+  variable: '--font-pixel',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://seiolelabs.com'),
@@ -36,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${serrif.variable} ${neuebit.variable}`}>
       <body>{children}</body>
     </html>
   )

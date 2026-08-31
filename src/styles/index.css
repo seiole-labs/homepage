@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,100;0,400;0,500;1,100;1,400;1,500&family=VT323&display=swap');
 @import 'tailwindcss';
 
 @plugin '@tailwindcss/typography';
 
 @theme inline {
-  --font-serif: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
-  --font-pixel: 'Press Start 2P', 'Courier New', monospace;
+  --font-serif: var(--font-serif);
+  --font-pixel: var(--font-pixel);
 }
 
 @layer base {
@@ -20,6 +19,22 @@
 
 body {
   font-family: var(--font-serif);
+  font-weight: 100;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.prose {
+  font-weight: 100 !important;
+  font-size: 1.125rem !important;
+  line-height: 1.8 !important;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  font-weight: 400 !important;
+}
+
+.prose p, .prose li, .prose span, .prose a, .prose strong, .prose em {
+  font-weight: 100 !important;
 }

@@ -28,7 +28,7 @@ export default async function Index() {
         >
           <p
             style={{
-              fontFamily: '"EB Garamond", serif',
+              fontFamily: 'var(--font-serif)',
               fontSize: 32,
               fontWeight: 100,
               lineHeight: 1.15,
@@ -54,20 +54,20 @@ export default async function Index() {
             <p
               className="italic"
               style={{
-                fontFamily: '"EB Garamond", serif',
+                fontFamily: 'var(--font-serif)',
                 fontSize: 30,
-                fontWeight: 100,
+                fontWeight: 400,
                 lineHeight: 1.1,
               }}
             >
-              Energy will be one of the
+              &ldquo;Energy will be one of the
             </p>
             <p
               className="italic"
               style={{
-                fontFamily: '"EB Garamond", serif',
+                fontFamily: 'var(--font-serif)',
                 fontSize: 30,
-                fontWeight: 100,
+                fontWeight: 400,
                 lineHeight: 1.1,
               }}
             >
@@ -76,24 +76,24 @@ export default async function Index() {
             <p
               className="italic"
               style={{
-                fontFamily: '"EB Garamond", serif',
+                fontFamily: 'var(--font-serif)',
                 fontSize: 30,
-                fontWeight: 100,
+                fontWeight: 400,
                 lineHeight: 1.1,
               }}
             >
-              lifetime for human progress
+              lifetimes for human progress
             </p>
             <p
               className="italic"
               style={{
-                fontFamily: '"EB Garamond", serif',
+                fontFamily: 'var(--font-serif)',
                 fontSize: 30,
-                fontWeight: 100,
+                fontWeight: 400,
                 lineHeight: 1.1,
               }}
             >
-              in AI and space exploration.
+              in AI and space explorations.&rdquo;
             </p>
           </div>
 
@@ -136,7 +136,7 @@ export default async function Index() {
                 rel="noopener noreferrer"
                 className="no-underline text-black"
                 style={{
-                  fontFamily: '"VT323", monospace',
+                  fontFamily: 'var(--font-pixel)',
                   fontSize: 36,
                   letterSpacing: '0.04em',
                   lineHeight: 0.1,
@@ -150,7 +150,7 @@ export default async function Index() {
               >
                 <span
                   style={{
-                    fontFamily: '"VT323", monospace',
+                    fontFamily: 'var(--font-pixel)',
                     fontSize: 16,
                     letterSpacing: '0.04em',
                     color: 'white',
@@ -177,7 +177,7 @@ export default async function Index() {
               rel="noopener noreferrer"
               className="no-underline text-black"
               style={{
-                fontFamily: '"VT323", monospace',
+                fontFamily: 'var(--font-pixel)',
                 fontSize: 26,
                 letterSpacing: '0.04em',
                 lineHeight: 0.1,
@@ -207,7 +207,7 @@ export default async function Index() {
           <div style={{ flex: '0 0 40%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <p
               style={{
-                fontFamily: '"VT323", monospace',
+                fontFamily: 'var(--font-pixel)',
                 fontSize: 36,
                 letterSpacing: '0.04em',
                 textTransform: 'uppercase',
@@ -231,7 +231,7 @@ export default async function Index() {
             >
               <li
                 style={{
-                  fontFamily: '"EB Garamond", serif',
+                  fontFamily: 'var(--font-serif)',
                   fontSize: 20,
                   fontWeight: 100,
                   lineHeight: 1.5,
@@ -244,7 +244,7 @@ export default async function Index() {
               </li>
               <li
                 style={{
-                  fontFamily: '"EB Garamond", serif',
+                  fontFamily: 'var(--font-serif)',
                   fontSize: 20,
                   fontWeight: 100,
                   lineHeight: 1.5,
@@ -257,7 +257,7 @@ export default async function Index() {
               </li>
               <li
                 style={{
-                  fontFamily: '"EB Garamond", serif',
+                  fontFamily: 'var(--font-serif)',
                   fontSize: 20,
                   fontWeight: 100,
                   lineHeight: 1.5,
@@ -271,7 +271,7 @@ export default async function Index() {
               </li>
               <li
                 style={{
-                  fontFamily: '"EB Garamond", serif',
+                  fontFamily: 'var(--font-serif)',
                   fontSize: 20,
                   fontWeight: 100,
                   lineHeight: 1.5,
@@ -318,7 +318,7 @@ export default async function Index() {
               >
                 <span
                   style={{
-                    fontFamily: '"VT323", monospace',
+                    fontFamily: 'var(--font-pixel)',
                     fontSize: 28,
                     lineHeight: '150%',
                   }}
@@ -327,9 +327,9 @@ export default async function Index() {
                 </span>
                 <h2
                   style={{
-                    fontFamily: '"EB Garamond", serif',
+                    fontFamily: 'var(--font-serif)',
                     fontSize: 28,
-                    fontWeight: 100,
+                    fontWeight: 400,
                     lineHeight: '150%',
                     margin: 0,
                   }}
@@ -370,7 +370,7 @@ export default async function Index() {
             >
               <p
                 style={{
-                  fontFamily: '"VT323", monospace',
+                  fontFamily: 'var(--font-pixel)',
                   fontSize: 36,
                   lineHeight: 0.8,
                   letterSpacing: '0.04em',
@@ -385,14 +385,14 @@ export default async function Index() {
               </p>
               <p
                 style={{
-                  fontFamily: '"EB Garamond", serif',
+                  fontFamily: 'var(--font-serif)',
                   fontSize: 18,
-                  fontWeight: 100,
+                  fontWeight: 400,
                   lineHeight: 1.2,
                   margin: 0,
                 }}
               >
-                Lead Researcher and Product
+                Lead Product & Researcher
               </p>
             </a>
 
@@ -410,7 +410,7 @@ export default async function Index() {
             >
               <p
                 style={{
-                  fontFamily: '"VT323", monospace',
+                  fontFamily: 'var(--font-pixel)',
                   fontSize: 36,
                   lineHeight: 0.8,
                   letterSpacing: '0.04em',
@@ -425,14 +425,14 @@ export default async function Index() {
               </p>
               <p
                 style={{
-                  fontFamily: '"EB Garamond", serif',
+                  fontFamily: 'var(--font-serif)',
                   fontSize: 18,
-                  fontWeight: 100,
+                  fontWeight: 400,
                   lineHeight: 1.2,
                   margin: 0,
                 }}
               >
-                Lead Product and Researcher
+                Lead Researcher & Product
               </p>
             </a>
           </div>
