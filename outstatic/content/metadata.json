@@ -1,6 +1,6 @@
 {
-  "commit": "bd0c445a92cc4972c02e0fae681aac35e19c8a52",
-  "generated": "2026-08-31T07:50:42.906Z",
+  "commit": "786d436424f8818e7a9f5418d649f001c6fb1c7f",
+  "generated": "2026-08-31T07:50:59.483Z",
   "metadata": [
     {
       "__outstatic": {
@@ -94,8 +94,8 @@
     },
     {
       "__outstatic": {
-        "commit": "bd0c445a92cc4972c02e0fae681aac35e19c8a52",
-        "hash": "3598926401",
+        "commit": "786d436424f8818e7a9f5418d649f001c6fb1c7f",
+        "hash": "713319754",
         "path": "outstatic/content/posts/seiole-labs-vision.mdx"
       },
       "author": {
@@ -105,7 +105,7 @@
       "collection": "posts",
       "publishedAt": "2026-08-31T08:23:11.792Z",
       "slug": "seiole-labs-vision",
-      "status": "draft",
+      "status": "published",
       "tags": [
       ],
       "title": "Seiole Labs’ Vision"
