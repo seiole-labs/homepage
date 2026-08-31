@@ -1,17 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,100;0,400;0,500;1,100;1,400;1,500&family=VT323&display=swap');
 @import 'tailwindcss';
 
 @plugin '@tailwindcss/typography';
 
-@plugin '@tailwindcss/typography';
+@theme inline {
+  --font-serif: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+  --font-pixel: 'Press Start 2P', 'Courier New', monospace;
+}
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
@@ -22,24 +18,8 @@
   }
 }
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
-}
-
-.home-intro p {
-  @apply text-2xl font-semibold leading-9 whitespace-nowrap;
+body {
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

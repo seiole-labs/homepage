@@ -3,22 +3,22 @@ import { Metadata } from 'next'
 import '@/styles/index.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://outstatic.com'),
+  metadataBase: new URL('https://seiolelabs.com'),
   title: {
-    default: 'Outstatic',
-    template: '%s | Outstatic'
+    default: 'Seiole Labs',
+    template: '%s | Seiole Labs'
   },
-  description: 'A blog starter built with Outstatic.',
+  description: 'Energy will be one of the biggest bottlenecks of our lifetime for human progress in AI and space exploration.',
   openGraph: {
-    title: 'Outstatic - A Static Site CMS for Next.js',
-    description: 'A blog starter built with Outstatic.',
+    title: 'Seiole Labs',
+    description: 'Energy will be one of the biggest bottlenecks of our lifetime for human progress in AI and space exploration.',
     url: absoluteUrl('/'),
-    siteName: 'Next.js',
+    siteName: 'Seiole Labs',
     images: [
       {
-        url: absoluteUrl('/images/og-image.png'),
-        width: 1800,
-        height: 1600
+        url: absoluteUrl('/grid.jpeg'),
+        width: 800,
+        height: 800
       }
     ],
     locale: 'en_US',
