@@ -1,6 +1,6 @@
 {
-  "commit": "32aafe8ae27efd1c787950322c3256e7eb0916b7",
-  "generated": "2026-09-02T06:19:44.519Z",
+  "commit": "163fda06bb93b61b40bdaa374cb8d91886e8d683",
+  "generated": "2026-09-02T10:50:20.285Z",
   "metadata": [
     {
       "__outstatic": {
@@ -90,6 +90,24 @@
       "tags": [
       ],
       "title": "Seiole Labs’ Vision"
+    },
+    {
+      "__outstatic": {
+        "commit": "163fda06bb93b61b40bdaa374cb8d91886e8d683",
+        "hash": "2381198931",
+        "path": "outstatic/content/posts/random.mdx"
+      },
+      "author": {
+        "name": "Ninad Sonawane",
+        "picture": "https://avatars.githubusercontent.com/u/77869600?v=4"
+      },
+      "collection": "posts",
+      "publishedAt": "2026-09-02T11:23:11.455Z",
+      "slug": "random",
+      "status": "draft",
+      "tags": [
+      ],
+      "title": "random"
     }
   ]
 }
