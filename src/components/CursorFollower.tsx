@@ -18,8 +18,8 @@ export default function CursorFollower() {
     }
 
     const tick = () => {
-      dotX += (mouseX - dotX) * 0.2
-      dotY += (mouseY - dotY) * 0.2
+      dotX += (mouseX - dotX) * 0.3
+      dotY += (mouseY - dotY) * 0.3
       if (dotRef.current) {
         dotRef.current.style.transform = `translate(${dotX}px, ${dotY}px) translate(-50%, -50%)`
       }

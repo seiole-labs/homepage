@@ -23,11 +23,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  cursor: url('/cursor.png') 12 12, auto;
+  cursor: none;
 }
 
-a, button, [role='button'], input[type='submit'], input[type='button'], textarea, select, label {
-  cursor: url('/cursor.png') 12 12, auto;
+* {
+  cursor: none !important;
 }
 
 .prose {
