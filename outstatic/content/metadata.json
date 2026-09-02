@@ -1,6 +1,6 @@
 {
-  "commit": "786d436424f8818e7a9f5418d649f001c6fb1c7f",
-  "generated": "2026-08-31T07:50:59.483Z",
+  "commit": "5543d23e32335320b3b88b7ca2bd53af2a0c955a",
+  "generated": "2026-09-02T05:41:46.621Z",
   "metadata": [
     {
       "__outstatic": {
@@ -94,8 +94,8 @@
     },
     {
       "__outstatic": {
-        "commit": "786d436424f8818e7a9f5418d649f001c6fb1c7f",
-        "hash": "713319754",
+        "commit": "5543d23e32335320b3b88b7ca2bd53af2a0c955a",
+        "hash": "286241371",
         "path": "outstatic/content/posts/seiole-labs-vision.mdx"
       },
       "author": {
@@ -103,6 +103,7 @@
         "picture": "https://avatars.githubusercontent.com/u/77869600?v=4"
       },
       "collection": "posts",
+      "coverImage": "/images/jupiter-spaceship.png",
       "publishedAt": "2026-08-31T08:23:11.792Z",
       "slug": "seiole-labs-vision",
       "status": "published",
