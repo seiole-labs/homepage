@@ -1,6 +1,6 @@
 {
-  "commit": "2089c8e20ed09c8b97e994f8d28436b1ad124ce8",
-  "generated": "2026-09-02T10:50:23.319Z",
+  "commit": "ede0dc9fe06006f3701c13b2c9f5c93bf4cd2749",
+  "generated": "2026-09-02T10:50:45.473Z",
   "metadata": [
     {
       "__outstatic": {
@@ -93,8 +93,8 @@
     },
     {
       "__outstatic": {
-        "commit": "2089c8e20ed09c8b97e994f8d28436b1ad124ce8",
-        "hash": "1562781959",
+        "commit": "ede0dc9fe06006f3701c13b2c9f5c93bf4cd2749",
+        "hash": "3299586656",
         "path": "outstatic/content/posts/random.mdx"
       },
       "author": {
