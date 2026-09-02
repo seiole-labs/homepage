@@ -135,29 +135,21 @@ const Footer = () => {
           style={{ maxWidth: 1120 }}
         >
           {/* Logo */}
-          <p
-            style={{
-              fontFamily: 'var(--font-pixel)',
-              fontSize: 60,
-              letterSpacing: '0.04em',
-              lineHeight: '72%',
-              textTransform: 'uppercase',
-              margin: 0,
-            }}
-          >
-            SEIOLE<br />
-            LABS
-          </p>
+          <img
+            src="/seiole-labs-combined-black.svg"
+            alt="Seiole Labs"
+            style={{ height: 60, width: 'auto' }}
+          />
 
           {/* Copyright */}
           <p
             style={{
               fontFamily: 'var(--font-pixel)',
-              fontSize: 60,
+              fontSize: 40,
               letterSpacing: '0.04em',
               lineHeight: '72%',
               textAlign: 'right',
-              marginBottom: 50,
+              marginBottom: 20,
             }}
           >
             ©

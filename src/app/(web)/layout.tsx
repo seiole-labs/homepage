@@ -1,6 +1,7 @@
 import { absoluteUrl } from '@/lib/utils'
 import { Metadata } from 'next'
 import localFont from 'next/font/local'
+import CursorFollower from '@/components/CursorFollower'
 import '@/styles/index.css'
 
 const serrif = localFont({
@@ -15,8 +16,14 @@ const serrif = localFont({
 })
 
 const neuebit = localFont({
-  src: '../../../public/fonts/ppneuebit-bold.otf',
+  src: '../../../public/fonts/SpaceGrotesk-VariableFont_wght.ttf',
   variable: '--font-pixel',
+  display: 'swap',
+})
+
+const ppneuebit = localFont({
+  src: '../../../public/fonts/ppneuebit-bold.otf',
+  variable: '--font-neuebit',
   display: 'swap',
 })
 
@@ -43,9 +50,14 @@ export const metadata: Metadata = {
     type: 'website'
   },
   icons: {
-    icon: [{ url: '/favicon/favicon-32x32.png' }],
-    apple: [{ url: '/favicon/apple-touch-icon.png' }]
-  }
+    icon: [
+      { url: '/favicon/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    apple: [{ url: '/favicon/apple-touch-icon.png', sizes: '180x180' }],
+  },
 }
 
 export default function RootLayout({
@@ -54,8 +66,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${serrif.variable} ${neuebit.variable}`}>
-      <body>{children}</body>
+    <html lang="en" className={`${serrif.variable} ${neuebit.variable} ${ppneuebit.variable}`}>
+      <body>
+        <CursorFollower />
+        {children}
+      </body>
     </html>
   )
 }

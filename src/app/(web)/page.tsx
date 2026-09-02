@@ -26,17 +26,11 @@ export default async function Index() {
           className="flex flex-col items-start"
           style={{ width: 'min(1120px, 100% - 72px)', paddingLeft: 3 }}
         >
-          <p
-            style={{
-              fontFamily: 'var(--font-serif)',
-              fontSize: 32,
-              fontWeight: 100,
-              lineHeight: 1.15,
-            }}
-          >
-            Seiole<br />
-            Labs
-          </p>
+          <img
+            src="/seiole-labs-wordmark-black.svg"
+            alt="Seiole Labs"
+            style={{ height: 40, width: 'auto' }}
+          />
         </div>
       </header>
 
@@ -104,7 +98,7 @@ export default async function Index() {
           >
             {/* Grid paper with image */}
             <a
-              href="https://google.com"
+              href="/mygrid"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full relative overflow-hidden no-underline"
@@ -131,7 +125,7 @@ export default async function Index() {
               style={{ height: 'min-content' }}
             >
               <a
-                href="https://google.com"
+                href="/mygrid"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="no-underline text-black"
@@ -172,7 +166,7 @@ export default async function Index() {
 
             {/* CTA */}
             <a
-              href="https://google.com"
+              href="/mygrid"
               target="_blank"
               rel="noopener noreferrer"
               className="no-underline text-black"
@@ -233,7 +227,7 @@ export default async function Index() {
                 style={{
                   fontFamily: 'var(--font-serif)',
                   fontSize: 20,
-                  fontWeight: 100,
+                  fontWeight: 500,
                   lineHeight: 1.5,
                   marginBottom: 16,
                 }}
@@ -246,7 +240,7 @@ export default async function Index() {
                 style={{
                   fontFamily: 'var(--font-serif)',
                   fontSize: 20,
-                  fontWeight: 100,
+                  fontWeight: 500,
                   lineHeight: 1.5,
                   marginBottom: 16,
                 }}
@@ -259,7 +253,7 @@ export default async function Index() {
                 style={{
                   fontFamily: 'var(--font-serif)',
                   fontSize: 20,
-                  fontWeight: 100,
+                  fontWeight: 500,
                   lineHeight: 1.5,
                   marginBottom: 16,
                 }}
@@ -273,7 +267,7 @@ export default async function Index() {
                 style={{
                   fontFamily: 'var(--font-serif)',
                   fontSize: 20,
-                  fontWeight: 100,
+                  fontWeight: 500,
                   lineHeight: 1.5,
                 }}
               >

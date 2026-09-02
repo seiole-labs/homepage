@@ -23,18 +23,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  cursor: url('/cursor.png') 12 12, auto;
+}
+
+a, button, [role='button'], input[type='submit'], input[type='button'], textarea, select, label {
+  cursor: url('/cursor.png') 12 12, auto;
 }
 
 .prose {
-  font-weight: 100 !important;
-  font-size: 1.125rem !important;
-  line-height: 1.8 !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  line-height: 175% !important;
 }
 
 .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-  font-weight: 400 !important;
+  font-weight: 600 !important;
 }
 
 .prose p, .prose li, .prose span, .prose a, .prose strong, .prose em {
-  font-weight: 100 !important;
+  font-weight: 600 !important;
 }
