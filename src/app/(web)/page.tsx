@@ -40,11 +40,14 @@ export default async function Index() {
         style={{ padding: '146px 0 180px' }}
       >
         <div
-          className="w-full flex flex-row items-start"
-          style={{ maxWidth: 'min(1120px, 100% - 72px)', gap: 32 }}
+          className="w-full flex flex-col md:flex-row items-start"
+          style={{ maxWidth: 'min(1120px, 100% - 72px)', gap: 48 }}
         >
           {/* Left — text */}
-          <div className="flex flex-col" style={{ flex: '1 0 0', gap: 36 }}>
+          <div
+            className="flex flex-col w-full md:w-1/2"
+            style={{ gap: 36 }}
+          >
             <p
               className="italic"
               style={{
@@ -93,8 +96,8 @@ export default async function Index() {
 
           {/* Right — illustration + product */}
           <div
-            className="flex flex-col items-start"
-            style={{ flex: '1 0 0', gap: 24, paddingBottom: 24 }}
+            className="flex flex-col items-start w-full md:w-1/2"
+            style={{ gap: 24, paddingBottom: 24 }}
           >
             {/* Grid paper with image */}
             <a
@@ -136,7 +139,7 @@ export default async function Index() {
                   lineHeight: 0.1,
                 }}
               >
-                mygrid v1.0
+                mygrid
               </a>
               <div
                 className="bg-black text-white flex items-center justify-center"
@@ -194,17 +197,18 @@ export default async function Index() {
         }}
       >
         <div
-          className="flex items-center"
-          style={{ width: 1120, margin: '0 auto', gap: 36 }}
+          className="flex flex-col md:flex-row items-center w-full"
+          style={{ maxWidth: 'min(1120px, 100% - 72px)', margin: '0 auto', gap: 36 }}
         >
           {/* Title — left side */}
-          <div style={{ flex: '0 0 40%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div className="w-full md:w-[40%] flex items-center justify-center">
             <p
               style={{
                 fontFamily: 'var(--font-pixel)',
                 fontSize: 36,
                 letterSpacing: '0.04em',
                 textTransform: 'uppercase',
+                margin: 0,
               }}
             >
               OUR FOCUS
@@ -213,7 +217,7 @@ export default async function Index() {
 
           {/* Bullet points — right side */}
           <div
-            style={{ flex: '0 0 60%', display: 'flex', alignItems: 'center' }}
+            className="w-full md:w-[60%] flex items-center"
           >
             <ul
               style={{
@@ -287,16 +291,16 @@ export default async function Index() {
         style={{ padding: '120px 36px 144px' }}
       >
         <div
-          className="w-full flex flex-row items-start"
+          className="w-full flex flex-col md:flex-row items-start"
           style={{ maxWidth: 1120, gap: 32 }}
         >
           {/* Left — empty space */}
-          <div style={{ flex: '0 0 40%' }} />
+          <div className="hidden md:block" style={{ flex: '0 0 40%' }} />
 
           {/* Right — articles list */}
           <div
-            className="flex flex-col items-start"
-            style={{ flex: '1 0 0', gap: 36 }}
+            className="flex flex-col items-start w-full"
+            style={{ flex: '1 1 0', gap: 36 }}
           >
             {posts.map((post) => (
               <Link
@@ -342,13 +346,13 @@ export default async function Index() {
         style={{ padding: '160px 36px 144px' }}
       >
         <div
-          className="w-full flex flex-row items-start"
+          className="w-full flex flex-col md:flex-row items-start"
           style={{ maxWidth: 1120, gap: 32 }}
         >
           {/* Left — team members */}
           <div
-            className="flex flex-row items-start"
-            style={{ flex: '0 0 50%', gap: 80 }}
+            className="flex flex-col md:flex-row items-start w-full"
+            style={{ flex: '0 0 50%', gap: 48 }}
           >
             {/* Ninad */}
             <a

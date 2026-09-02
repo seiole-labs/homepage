@@ -1,7 +1,6 @@
 import { absoluteUrl } from '@/lib/utils'
 import { Metadata } from 'next'
 import localFont from 'next/font/local'
-import CursorFollower from '@/components/CursorFollower'
 import '@/styles/index.css'
 
 const serrif = localFont({
@@ -68,7 +67,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${serrif.variable} ${neuebit.variable} ${ppneuebit.variable}`}>
       <body>
-        <CursorFollower />
         {children}
       </body>
     </html>

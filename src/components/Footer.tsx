@@ -131,14 +131,14 @@ const Footer = () => {
         />
 
         <div
-          className="w-full flex flex-row items-end justify-between"
+          className="w-full flex flex-row items-end justify-between flex-wrap gap-4"
           style={{ maxWidth: 1120 }}
         >
           {/* Logo */}
           <img
             src="/seiole-labs-combined-black.svg"
             alt="Seiole Labs"
-            style={{ height: 60, width: 'auto' }}
+            style={{ height: 60, width: 'auto', maxWidth: '100%', objectFit: 'contain' }}
           />
 
           {/* Copyright */}
