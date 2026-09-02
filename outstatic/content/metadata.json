@@ -1,6 +1,6 @@
 {
-  "commit": "163fda06bb93b61b40bdaa374cb8d91886e8d683",
-  "generated": "2026-09-02T10:50:20.285Z",
+  "commit": "2089c8e20ed09c8b97e994f8d28436b1ad124ce8",
+  "generated": "2026-09-02T10:50:23.319Z",
   "metadata": [
     {
       "__outstatic": {
@@ -93,8 +93,8 @@
     },
     {
       "__outstatic": {
-        "commit": "163fda06bb93b61b40bdaa374cb8d91886e8d683",
-        "hash": "2381198931",
+        "commit": "2089c8e20ed09c8b97e994f8d28436b1ad124ce8",
+        "hash": "1562781959",
         "path": "outstatic/content/posts/random.mdx"
       },
       "author": {
@@ -104,7 +104,7 @@
       "collection": "posts",
       "publishedAt": "2026-09-02T11:23:11.455Z",
       "slug": "random",
-      "status": "draft",
+      "status": "published",
       "tags": [
       ],
       "title": "random"
