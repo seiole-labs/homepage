@@ -1,6 +1,6 @@
 {
-  "commit": "18075fe844f8521a89949f00ce67b8b1b52f36cd",
-  "generated": "2026-09-02T06:18:23.450Z",
+  "commit": "32aafe8ae27efd1c787950322c3256e7eb0916b7",
+  "generated": "2026-09-02T06:19:44.519Z",
   "metadata": [
     {
       "__outstatic": {
@@ -74,8 +74,8 @@
     },
     {
       "__outstatic": {
-        "commit": "5543d23e32335320b3b88b7ca2bd53af2a0c955a",
-        "hash": "286241371",
+        "commit": "32aafe8ae27efd1c787950322c3256e7eb0916b7",
+        "hash": "1373141456",
         "path": "outstatic/content/posts/seiole-labs-vision.mdx"
       },
       "author": {
