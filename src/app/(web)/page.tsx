@@ -356,7 +356,7 @@ export default async function Index() {
           >
             {/* Ninad */}
             <a
-              href="https://www.linkedin.com/in/ninadsonawane/"
+              href="https://www.linkedin.com/in/ninadsonawanework/"
               target="_blank"
               rel="noopener noreferrer"
               className="no-underline text-black"
