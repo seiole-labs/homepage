@@ -1,6 +1,6 @@
 {
-  "commit": "e1c241b2d46a4a2f34156994df91557f7110f7cd",
-  "generated": "2026-09-13T18:18:50.918Z",
+  "commit": "139c6a9ed73d1541655f69a1659b95c4768c0150",
+  "generated": "2026-09-13T18:19:16.898Z",
   "metadata": [
     {
       "__outstatic": {
@@ -93,8 +93,8 @@
     },
     {
       "__outstatic": {
-        "commit": "e1c241b2d46a4a2f34156994df91557f7110f7cd",
-        "hash": "2815526905",
+        "commit": "139c6a9ed73d1541655f69a1659b95c4768c0150",
+        "hash": "3477124881",
         "path": "outstatic/content/posts/taking-gridsfm-on-a-spin.mdx"
       },
       "author": {
