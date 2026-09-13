@@ -65,15 +65,11 @@ We started with Ohio, Colorado, Arizona, Pennsylvania, and Indiana models produc
 
 Following the perturbation families in Section 5 of the[ GridSFM white paper](https://www.microsoft.com/en-us/research/wp-content/uploads/2026/05/GridFM_white_paper.pdf), we chained five transformations:
 
-1. **Load scaling and local demand jitter**
-
-2. **Generator outage**
-
-3. **Branch-rating derating**
-
-4. **Voltage-limit tightening**
-
-5. **Generator-cost reshuffling**
+- Load scaling and local demand jitter
+- Generator outage
+- Branch-rating derating
+- Voltage-limit tightening
+- Generator-cost reshuffling
 
 Each scenario started from a fresh base grid.
 
@@ -237,7 +233,7 @@ These results point toward a hybrid approach:
 
 **Learned proposal → Optimization-backed final answer**
 
-Use GridSFM's fast prediction to initialize AC-OPF, then let the solver enforce physical feasibility and produce the final answer. The[ GridSFM white paper](https://www.microsoft.com/en-us/research/wp-content/uploads/2026/05/GridFM_white_paper.pdf) introduced this direction. We are now testing it under our own networks, perturbations, and OOD conditions. We are not sharing those results yet. 
+Use GridSFM's fast prediction to initialize AC-OPF, then let the solver enforce physical feasibility and produce the final answer. The[ GridSFM white paper](https://www.microsoft.com/en-us/research/wp-content/uploads/2026/05/GridFM_white_paper.pdf) introduced this direction. We are now testing it under our own networks, perturbations, and OOD conditions. We are not sharing those results yet.
 
 The next post will answer the practical question left open here:
 
