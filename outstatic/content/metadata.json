@@ -1,6 +1,6 @@
 {
-  "commit": "c9150c7555d9b5347c7fb95efadc3dae2172b357",
-  "generated": "2026-09-13T08:42:49.927Z",
+  "commit": "ddf6156e52ff7ab925a226f51297ce9aff75d5de",
+  "generated": "2026-09-13T09:13:30.049Z",
   "metadata": [
     {
       "__outstatic": {
@@ -93,8 +93,8 @@
     },
     {
       "__outstatic": {
-        "commit": "c9150c7555d9b5347c7fb95efadc3dae2172b357",
-        "hash": "257093542",
+        "commit": "ddf6156e52ff7ab925a226f51297ce9aff75d5de",
+        "hash": "1799086577",
         "path": "outstatic/content/posts/taking-gridsfm-on-a-spin.mdx"
       },
       "author": {
@@ -105,7 +105,7 @@
       "coverImage": "/images/skyline.png",
       "publishedAt": "2026-09-12T15:46:19.443Z",
       "slug": "taking-gridsfm-on-a-spin",
-      "status": "draft",
+      "status": "published",
       "tags": [
       ],
       "title": "Taking GridSFM on a Spin"
