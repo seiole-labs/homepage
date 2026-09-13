@@ -395,7 +395,7 @@ export default async function Index() {
             </a>
 
             {/* Abhey */}
-            <a
+            {/* <a
               href="https://www.linkedin.com/in/abhey-kalia-a294ab176/"
               target="_blank"
               rel="noopener noreferrer"
@@ -432,7 +432,7 @@ export default async function Index() {
               >
                 Lead Researcher & Product
               </p>
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
