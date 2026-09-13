@@ -1,6 +1,6 @@
 {
-  "commit": "491108129bca0275fdfe333085c7a74f0eed9c6f",
-  "generated": "2026-09-12T15:25:06.240Z",
+  "commit": "c9150c7555d9b5347c7fb95efadc3dae2172b357",
+  "generated": "2026-09-13T08:42:49.927Z",
   "metadata": [
     {
       "__outstatic": {
@@ -93,15 +93,16 @@
     },
     {
       "__outstatic": {
-        "commit": "491108129bca0275fdfe333085c7a74f0eed9c6f",
-        "hash": "3165993757",
+        "commit": "c9150c7555d9b5347c7fb95efadc3dae2172b357",
+        "hash": "257093542",
         "path": "outstatic/content/posts/taking-gridsfm-on-a-spin.mdx"
       },
       "author": {
-        "name": "Ninad Sonawane",
-        "picture": "https://avatars.githubusercontent.com/u/77869600?v=4"
+        "name": "Abhey Kalia",
+        "picture": "/images/bearbnb.png"
       },
       "collection": "posts",
+      "coverImage": "/images/skyline.png",
       "publishedAt": "2026-09-12T15:46:19.443Z",
       "slug": "taking-gridsfm-on-a-spin",
       "status": "draft",
