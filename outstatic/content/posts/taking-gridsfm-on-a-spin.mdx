@@ -12,17 +12,7 @@ tags: []
 
 Can a small neural model approximate[ AC-OPF](https://powsybl.readthedocs.io/projects/powsybl-optimizer/en/stable/optimizer/acOptimalPowerflow.html) on grids far larger than anything it saw during training? We pushed GridSFM to its limits to find out.
 
-GridSFM is Microsoft Research's roughly 15-million-parameter model for predicting:
-
-- Bus voltages
-
-- Generator dispatch
-
-- Branch flows
-
-- Grid feasibility
-
-—all from topology and operating conditions.
+GridSFM is a roughly 15-million-parameter model from Microsoft Research that predicts bus voltages, generator dispatch, branch flows, and a grid-feasibility score from grid topology and operating conditions.
 
 Our evaluation uses two distinct settings:
 
