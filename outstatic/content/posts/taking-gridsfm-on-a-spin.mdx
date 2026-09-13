@@ -7,6 +7,7 @@ author:
   picture: /images/bearbnb.png
 slug: taking-gridsfm-on-a-spin
 coverImage: /images/skyline.png
+tags: []
 ---
 
 Can a small neural model approximate[ AC-OPF](https://powsybl.readthedocs.io/projects/powsybl-optimizer/en/stable/optimizer/acOptimalPowerflow.html) on grids far larger than anything it saw during training? We pushed GridSFM to its limits to find out.
@@ -29,9 +30,26 @@ Our evaluation uses two distinct settings:
 
 2. A separate zero-shot topology-and-scale OOD set
 
-**Acknowledgment**
+***Acknowledgment***
 
-Microsoft open-sourced GridSFM, making these experiments possible. We thank the authors. This work stands on their shoulders, and we highly encourage readers to explore the[ GridFM project page](https://www.microsoft.com/en-us/research/project/gridfm/) and the[ GridSFM white paper](https://www.microsoft.com/en-us/research/wp-content/uploads/2026/05/GridFM_white_paper.pdf).
+*Microsoft open-sourced GridSFM, making these experiments possible. We thank the authors. This work stands on their shoulders, and we highly encourage readers to explore the*[ *GridFM project page*](https://www.microsoft.com/en-us/research/project/gridfm/) *and the*[ *GridSFM white paper*](https://www.microsoft.com/en-us/research/wp-content/uploads/2026/05/GridFM_white_paper.pdf)*.*
+
+**Table of Contents**
+
+1. Two Evaluation Regimes
+   - Almost In-Distribution (Almost-ID) & Zero-Shot Topology-and-Scale Shift
+2. Methodology
+   - Almost-ID Perturbation Test & Large PGLib Zero-Shot Test
+3. Networks Tested
+4. Prediction Error Against AC-OPF
+5. KCL and Thermal Violations
+   - Active-Power KCL Violation & Reactive-Power KCL Violation
+6. What the Feasibility Head Tells Us
+7. Latency and Solver Iterations
+8. Toward a Hybrid Solver
+9. Takeaways
+
+10\. A Pinch of Salt
 
 ## **Two Evaluation Regimes**
 
@@ -53,13 +71,13 @@ Two accepted cases exceed that maximum by more than **2×**, and the largest exp
 
 “True OOD” would hide known overlap in data provenance. “Topology-and-scale shifted zero-shot evaluation” states exactly what the experiment establishes.
 
-# **Methodology**
+## **Methodology**
 
 **Benchmark hardware**
 
 All GridSFM runs used batch size one on CPU. The recorded machine had an Intel Core Ultra 7 155U, 30.87 GiB RAM, and no GPU.
 
-## **Almost-ID Perturbation Test**
+### **Almost-ID Perturbation Test**
 
 We started with Ohio, Colorado, Arizona, Pennsylvania, and Indiana models produced by Microsoft's open-data pipeline. That pipeline reconstructs OPF-solvable transmission models from public sources including OpenStreetMap, EIA data, and US Census data. Its design is described in this [paper](https://arxiv.org/abs/2605.04289).
 
@@ -71,9 +89,7 @@ Following the perturbation families in Section 5 of the[ GridSFM white paper](ht
 - Voltage-limit tightening
 - Generator-cost reshuffling
 
-Each scenario started from a fresh base grid.
-
-Every transformation had its own activation rule, so one scenario could contain several simultaneous changes. We sampled until five AC-OPF-solvable scenarios were accepted for each topology: **25 scenarios total**.
+Each scenario started from a fresh base grid. Also, every transformation had its own activation rule, so one scenario could contain several simultaneous changes. We sampled until five AC-OPF-solvable scenarios were accepted for each topology: **25 scenarios total**.
 
 The accepted samples realized:
 
@@ -83,7 +99,7 @@ The accepted samples realized:
 4. Voltage tightening in **1/25 scenarios**
 5. Cost reshuffling in **all 25 scenarios**
 
-## **Large PGLib Zero-Shot Test**
+### **Large PGLib Zero-Shot Test**
 
 For scale-shifted evaluation, we used vanilla PGLib-OPF base cases without further perturbation. [PGLib-OPF](https://arxiv.org/abs/1908.02788) was created as an open, standardized benchmark library for AC-OPF algorithms. Before accepting a PGLib case into the aggregate, we used a **source-to-PyG round-trip check**:
 
@@ -99,11 +115,11 @@ For scale-shifted evaluation, we used vanilla PGLib-OPF base cases without furth
 
 This check separates GridSFM prediction error from error introduced while converting the network into the model's input representation. We evaluated six PGLib networks. AC-OPF and GridSFM completed on all six. Four passed the complete round-trip check and form the accepted aggregate. The two larger runs produced valid individual measurements but remain exploratory.
 
-### ***case24464_goc***
+***case24464_goc***
 
 Both AC-OPF solves succeeded and their objectives differed by only **1.9019e-9 in relative terms**. However, the maximum state or flow difference was **0.116072 p.u.**, above the 1e-3 threshold. The difference was localized to reactive generator dispatch and the corresponding reactive branch flow.
 
-### ***case78484_epigrids***
+***case78484_epigrids***
 
 The first containerized AC-OPF attempt exceeded its **7.472 GiB memory limit**. A later host-native AC-OPF run succeeded, and GridSFM inference completed. However, the round-trip re-solve was skipped, and six inactive type-4 buses required alignment with their source states.
 
@@ -111,7 +127,7 @@ The first containerized AC-OPF attempt exceeded its **7.472 GiB memory limit**. 
 
 We report both individual results but exclude them from aggregate statistics. The exploratory label reflects incomplete representation validation, not a failure to run either method.
 
-# **Networks Tested**
+## **Networks Tested**
 
 Generator counts can vary within an Almost-ID topology because some accepted perturbations include outages.
 
@@ -119,11 +135,9 @@ Generator counts can vary within an Almost-ID topology because some accepted per
 
 *Exploratory result; excluded from accepted OOD aggregates.*
 
-# **Prediction Error Against AC-OPF**
+## **Prediction Error Against AC-OPF**
 
-Almost-ID rows average five perturbations per topology. PGLib rows are individual base cases.
-
-All values except angle and cost are in **per unit**.
+Almost-ID rows average five perturbations per topology. PGLib rows are individual base cases and all values except angle and cost are in **per unit**.
 
 ![](/images/2-A5Nj.png)
 
@@ -137,17 +151,11 @@ The shift is visible:
 
 - Active-power KCL error rises by **18.2×**
 
-But scale alone does not explain every result.
+But scale alone does not explain every result. The **8,387-bus PEGASE case** fails more severely than both larger accepted cases. Model family, topology, operating point, and feature distribution may all matter. The Almost-ID results also leave room for improvement.
 
-The **8,387-bus PEGASE case** fails more severely than both larger accepted cases. Model family, topology, operating point, and feature distribution may all matter.
+Their mean cost error is **10.778%**, and one individual perturbation reaches **68.353%**. **Familiar topology does not guarantee uniformly accurate dispatch.**
 
-The Almost-ID results also leave room for improvement.
-
-Their mean cost error is **10.778%**, and one individual perturbation reaches **68.353%**.
-
-**Familiar topology does not guarantee uniformly accurate dispatch.**
-
-# **KCL and Thermal Violations**
+## **KCL and Thermal Violations**
 
 Regression error is not the same as physical feasibility.
 
@@ -167,11 +175,11 @@ A prediction can therefore have reasonable voltage or cost error while violating
 
 Lower is better. The better KCL result in each row is bold.
 
-## **Active-Power KCL Violation**
+### **Active-Power KCL Violation**
 
 ![](/images/3-k4ND.png)
 
-## **Reactive-Power KCL Violation**
+### **Reactive-Power KCL Violation**
 
 ![](/images/4-IxNT.png)
 
@@ -179,7 +187,7 @@ Lower is better. The better KCL result in each row is bold.
 
 AC-OPF remains the authority for the final feasible solution. GridSFM's raw output is better understood as a **fast proposal** than as an operational dispatch.
 
-# **What the Feasibility Head Tells Us**
+## **What the Feasibility Head Tells Us**
 
 GridSFM also returns a graph-level feasibility logit. All **25 Almost-ID scenarios** received feasibility probabilities between: **0.965 → 0.99998**
 
@@ -205,7 +213,7 @@ The feasibility score is not a certificate for GridSFM's predicted dispatch. KCL
 
 ---
 
-# **Latency and Solver Iterations**
+## **Latency and Solver Iterations**
 
 Lower latency is better. The faster result in each row is bold.
 
@@ -227,7 +235,7 @@ However:
 
 This is not yet a formal end-to-end speedup. The GridSFM timer excludes Python startup, imports, and checkpoint loading. The AC timer covers PowerModels/JuMP construction and optimization but excludes container startup and parsing. Repeated, boundary-matched measurements are needed for a production latency claim.
 
-# **Toward a Hybrid Solver**
+## **Toward a Hybrid Solver**
 
 These results point toward a hybrid approach:
 
@@ -239,7 +247,7 @@ The next post will answer the practical question left open here:
 
 *Can a GridSFM warm start preserve AC-OPF quality while materially reducing total latency?*
 
-# **Takeaways**
+## **Takeaways**
 
 - **GridSFM performs materially better on familiar, training-scale topologies** than on the accepted large-PGLib set, though Almost-ID errors are not uniformly small.
 
@@ -253,7 +261,7 @@ The next post will answer the practical question left open here:
 
 - **The most promising direction is hybrid:** learned proposal, optimization-backed final answer.
 
-# **A Pinch of Salt**
+## **A Pinch of Salt**
 
 These results should be read with several limitations in mind:
 
