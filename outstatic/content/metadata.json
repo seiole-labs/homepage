@@ -1,6 +1,6 @@
 {
-  "commit": "139c6a9ed73d1541655f69a1659b95c4768c0150",
-  "generated": "2026-09-13T18:19:16.898Z",
+  "commit": "e2c607c36704d202e40ce685dd38efa9ebb03972",
+  "generated": "2026-09-14T06:56:25.440Z",
   "metadata": [
     {
       "__outstatic": {
@@ -93,13 +93,13 @@
     },
     {
       "__outstatic": {
-        "commit": "139c6a9ed73d1541655f69a1659b95c4768c0150",
-        "hash": "3477124881",
+        "commit": "e2c607c36704d202e40ce685dd38efa9ebb03972",
+        "hash": "1968720148",
         "path": "outstatic/content/posts/taking-gridsfm-on-a-spin.mdx"
       },
       "author": {
-        "name": "Abhey Kalia",
-        "picture": "/images/bearbnb.png"
+        "name": "Ninad Sonawane",
+        "picture": "/images/416896f9-a84e-4828-84ba-5e429d85de90-EzMz.png"
       },
       "collection": "posts",
       "coverImage": "/images/skyline.png",
