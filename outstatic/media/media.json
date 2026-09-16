@@ -1,7 +1,79 @@
 {
-  "commit": "a6fec87e8078cc9b86f657ed7e74abe84f75ca08",
-  "generated": "2026-09-14T06:56:12.648Z",
+  "commit": "fd24130664a14d421ee656e7ed93c7a3ea9747f4",
+  "generated": "2026-09-16T06:21:06.301Z",
   "media": [
+    {
+      "__outstatic": {
+        "commit": "fd24130664a14d421ee656e7ed93c7a3ea9747f4",
+        "hash": "2469030076",
+        "path": "public/images/001-networks-tested-EyND.svg"
+      },
+      "alt": "",
+      "filename": "001-networks-tested-EyND.svg",
+      "publishedAt": "2026-09-16T06:21:06.297Z",
+      "source": "images",
+      "type": "image"
+    },
+    {
+      "__outstatic": {
+        "commit": "fd24130664a14d421ee656e7ed93c7a3ea9747f4",
+        "hash": "3482167121",
+        "path": "public/images/002-prediction-errors-IwNj.svg"
+      },
+      "alt": "",
+      "filename": "002-prediction-errors-IwNj.svg",
+      "publishedAt": "2026-09-16T06:21:06.298Z",
+      "source": "images",
+      "type": "image"
+    },
+    {
+      "__outstatic": {
+        "commit": "fd24130664a14d421ee656e7ed93c7a3ea9747f4",
+        "hash": "3894952047",
+        "path": "public/images/003-active-kcl-violations-U5OD.svg"
+      },
+      "alt": "",
+      "filename": "003-active-kcl-violations-U5OD.svg",
+      "publishedAt": "2026-09-16T06:21:06.299Z",
+      "source": "images",
+      "type": "image"
+    },
+    {
+      "__outstatic": {
+        "commit": "fd24130664a14d421ee656e7ed93c7a3ea9747f4",
+        "hash": "3175336020",
+        "path": "public/images/004-reactive-kcl-violations-U4MT.svg"
+      },
+      "alt": "",
+      "filename": "004-reactive-kcl-violations-U4MT.svg",
+      "publishedAt": "2026-09-16T06:21:06.299Z",
+      "source": "images",
+      "type": "image"
+    },
+    {
+      "__outstatic": {
+        "commit": "fd24130664a14d421ee656e7ed93c7a3ea9747f4",
+        "hash": "3780511125",
+        "path": "public/images/005-feasibility-output-k3MT.svg"
+      },
+      "alt": "",
+      "filename": "005-feasibility-output-k3MT.svg",
+      "publishedAt": "2026-09-16T06:21:06.300Z",
+      "source": "images",
+      "type": "image"
+    },
+    {
+      "__outstatic": {
+        "commit": "fd24130664a14d421ee656e7ed93c7a3ea9747f4",
+        "hash": "2870189954",
+        "path": "public/images/006-latency-and-iterations-AxNz.svg"
+      },
+      "alt": "",
+      "filename": "006-latency-and-iterations-AxNz.svg",
+      "publishedAt": "2026-09-16T06:21:06.301Z",
+      "source": "images",
+      "type": "image"
+    },
     {
       "__outstatic": {
         "commit": "c9150c7555d9b5347c7fb95efadc3dae2172b357",
