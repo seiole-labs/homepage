@@ -236,9 +236,9 @@ export default async function Index() {
                   marginBottom: 16,
                 }}
               >
-                focus on AC Optimal Power Flow (ACOPF): the problem of
-                deciding how electricity should be generated and routed safely,
-                cheaply, and reliably.
+                Grid modeling and optimization with ML: Apply machine learning
+                to power-system modeling and decision-making to develop faster,
+                more scalable optimization methods.
               </li>
               <li
                 style={{
@@ -249,23 +249,9 @@ export default async function Index() {
                   marginBottom: 16,
                 }}
               >
-                today&apos;s approaches often force a compromise: fast
-                approximations omit important grid physics, while high-fidelity
-                AC solvers can become slow as networks grow.
-              </li>
-              <li
-                style={{
-                  fontFamily: 'var(--font-serif)',
-                  fontSize: 20,
-                  fontWeight: 500,
-                  lineHeight: 1.5,
-                  marginBottom: 16,
-                }}
-              >
-                we are exploring whether models pretrained across many grid
-                topologies and operating conditions can approximate ACOPF
-                solutions faster while remaining physically feasible and
-                trustworthy.
+                Efficient ACOPF methods: Improve AC Optimal Power Flow (ACOPF)
+                techniques for deciding how electricity is generated and routed
+                safely, economically, and reliably.
               </li>
               <li
                 style={{
@@ -275,10 +261,9 @@ export default async function Index() {
                   lineHeight: 1.5,
                 }}
               >
-                our experimental environment for comparing conventional
-                solvers and GridFM-based methods on solve time, optimality gap,
-                constraint violations, and robustness under changing loads,
-                renewables, and topology conditions.
+                Foundation models for power grids: Explore ML-based surrogate
+                and hybrid models that preserve key grid physics while reducing
+                solve time compared with traditional ACOPF solvers.
               </li>
             </ul>
           </div>
@@ -390,7 +375,7 @@ export default async function Index() {
                   margin: 0,
                 }}
               >
-                Lead Product & Researcher
+                Lead Researcher
               </p>
             </a>
 
