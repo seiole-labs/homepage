@@ -17,7 +17,7 @@ const Footer = () => {
             marginBottom: 24,
           }}
         >
-          Help us build the future of Energy
+          We would love to collaborate
         </p>
         <a
           href="/careers"

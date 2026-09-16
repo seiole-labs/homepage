@@ -28,8 +28,8 @@ export default function Careers() {
             textAlign: 'center',
           }}
         >
-          We are hiring researchers in grid optimization in ML space. Mail us
-          for more info at{' '}
+          Discussions open for researchers in graph neural networks, applied
+          ML in power systems, grid optimization, and similar areas. Mail us at{' '}
           <a
             href="mailto:seiolelabs@gmail.com"
             className="underline text-black"
