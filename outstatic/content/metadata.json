@@ -1,6 +1,6 @@
 {
-  "commit": "d88d24ccb990baefd7f97bab415564617c3916fa",
-  "generated": "2026-09-16T06:22:49.368Z",
+  "commit": "fd6687dc9312e49991e4f29e1da74d45b9689bf0",
+  "generated": "2026-09-16T11:49:08.839Z",
   "metadata": [
     {
       "__outstatic": {
@@ -74,25 +74,6 @@
     },
     {
       "__outstatic": {
-        "commit": "95d9778fdbf82f16f515954bc0b950fd4102b5d8",
-        "hash": "2931597014",
-        "path": "outstatic/content/posts/seiole-labs-vision.mdx"
-      },
-      "author": {
-        "name": "Ninad Sonawane",
-        "picture": "https://avatars.githubusercontent.com/u/77869600?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/jupiter-spaceship.png",
-      "publishedAt": "2026-08-31T08:23:11.792Z",
-      "slug": "seiole-labs-vision",
-      "status": "published",
-      "tags": [
-      ],
-      "title": "Seiole Labs’ Vision"
-    },
-    {
-      "__outstatic": {
         "commit": "d88d24ccb990baefd7f97bab415564617c3916fa",
         "hash": "3388923521",
         "path": "outstatic/content/posts/taking-gridsfm-on-a-spin.mdx"
@@ -109,6 +90,25 @@
       "tags": [
       ],
       "title": "Taking GridSFM on a Spin"
+    },
+    {
+      "__outstatic": {
+        "commit": "fd6687dc9312e49991e4f29e1da74d45b9689bf0",
+        "hash": "4164204146",
+        "path": "outstatic/content/posts/seiole-labs-vision.mdx"
+      },
+      "author": {
+        "name": "Ninad Sonawane",
+        "picture": "https://avatars.githubusercontent.com/u/77869600?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/jupiter-spaceship.png",
+      "publishedAt": "2026-08-31T08:23:11.792Z",
+      "slug": "seiole-labs-vision",
+      "status": "published",
+      "tags": [
+      ],
+      "title": "Seiole Labs’ Vision"
     }
   ]
 }
