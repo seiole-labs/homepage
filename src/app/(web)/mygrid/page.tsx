@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Countdown from '@/components/Countdown'
 
 export default function MyGrid() {
   return (
@@ -29,16 +28,32 @@ export default function MyGrid() {
             textAlign: 'center',
           }}
         >
-          will launch worldwide in{' '}
-          <Countdown />
-          {' '}. Mail us for early access at{' '}
-          <a
-            href="mailto:seiolelabs@gmail.com"
-            className="underline text-black"
-          >
-            seiolelabs@gmail.com
-          </a>
+          Launching soon..
         </p>
+        <div
+          style={{
+            position: 'relative',
+            width: '100%',
+            maxWidth: 720,
+            aspectRatio: '16 / 9',
+            marginTop: 48,
+          }}
+        >
+          <iframe
+            src="https://www.youtube.com/embed/pzdtAPo-3EQ"
+            title="Mygrid tool demo"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              border: 'none',
+            }}
+          />
+        </div>
         <Link
           href="/"
           className="no-underline text-black mt-12"
