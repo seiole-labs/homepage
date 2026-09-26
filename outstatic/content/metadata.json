@@ -1,6 +1,6 @@
 {
-  "commit": "3c5adbb11625f17d4676132ee980614c48b17a5d",
-  "generated": "2026-09-19T06:16:30.758Z",
+  "commit": "70af6293aaca23b6526e2f445ab01c0f021ab5e2",
+  "generated": "2026-09-26T09:20:06.193Z",
   "metadata": [
     {
       "__outstatic": {
@@ -74,25 +74,6 @@
     },
     {
       "__outstatic": {
-        "commit": "d88d24ccb990baefd7f97bab415564617c3916fa",
-        "hash": "3388923521",
-        "path": "outstatic/content/posts/taking-gridsfm-on-a-spin.mdx"
-      },
-      "author": {
-        "name": "Ninad Sonawane",
-        "picture": "/images/416896f9-a84e-4828-84ba-5e429d85de90-EzMz.png"
-      },
-      "collection": "posts",
-      "coverImage": "/images/skyline.png",
-      "publishedAt": "2026-09-12T15:46:19.443Z",
-      "slug": "taking-gridsfm-on-a-spin",
-      "status": "published",
-      "tags": [
-      ],
-      "title": "Taking GridSFM on a Spin"
-    },
-    {
-      "__outstatic": {
         "commit": "3c5adbb11625f17d4676132ee980614c48b17a5d",
         "hash": "2773498647",
         "path": "outstatic/content/posts/seiole-labs-vision.mdx"
@@ -109,6 +90,25 @@
       "tags": [
       ],
       "title": "Seiole Labs’ Vision"
+    },
+    {
+      "__outstatic": {
+        "commit": "70af6293aaca23b6526e2f445ab01c0f021ab5e2",
+        "hash": "3459944556",
+        "path": "outstatic/content/posts/taking-gridsfm-on-a-spin.mdx"
+      },
+      "author": {
+        "name": "Ninad Sonawane",
+        "picture": "/images/416896f9-a84e-4828-84ba-5e429d85de90-EzMz.png"
+      },
+      "collection": "posts",
+      "coverImage": "/images/skyline.png",
+      "publishedAt": "2026-09-12T15:46:19.443Z",
+      "slug": "taking-gridsfm-on-a-spin",
+      "status": "published",
+      "tags": [
+      ],
+      "title": "Taking GridSFM on a Spin"
     }
   ]
 }
