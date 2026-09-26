@@ -1,6 +1,6 @@
 {
-  "commit": "21f51fe4184eab5581cdcd90e7b7330c67f0510c",
-  "generated": "2026-09-26T10:36:13.457Z",
+  "commit": "0be56ed5da7875c98e1ccebb80f32472d25e4832",
+  "generated": "2026-09-26T13:47:10.951Z",
   "metadata": [
     {
       "__outstatic": {
@@ -109,6 +109,25 @@
       "tags": [
       ],
       "title": "Taking GridSFM on a Spin"
+    },
+    {
+      "__outstatic": {
+        "commit": "0be56ed5da7875c98e1ccebb80f32472d25e4832",
+        "hash": "3485928845",
+        "path": "outstatic/content/posts/lora-adapters-for-gridsfm.md"
+      },
+      "author": {
+        "name": "Ninad Sonawane",
+        "picture": "https://avatars.githubusercontent.com/u/77869600?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "/images/industrial-pattern.png",
+      "publishedAt": "2026-09-26T14:18:16.888Z",
+      "slug": "lora-adapters-for-gridsfm",
+      "status": "published",
+      "tags": [
+      ],
+      "title": "LoRA adapters for GridSFM"
     }
   ]
 }
