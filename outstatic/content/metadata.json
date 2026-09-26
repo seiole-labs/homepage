@@ -1,6 +1,6 @@
 {
-  "commit": "0be56ed5da7875c98e1ccebb80f32472d25e4832",
-  "generated": "2026-09-26T13:47:10.951Z",
+  "commit": "3bb3e58837f47e657946bce912616ce5a2973659",
+  "generated": "2026-09-26T13:49:18.410Z",
   "metadata": [
     {
       "__outstatic": {
@@ -112,8 +112,8 @@
     },
     {
       "__outstatic": {
-        "commit": "0be56ed5da7875c98e1ccebb80f32472d25e4832",
-        "hash": "3485928845",
+        "commit": "3bb3e58837f47e657946bce912616ce5a2973659",
+        "hash": "1362092306",
         "path": "outstatic/content/posts/lora-adapters-for-gridsfm.md"
       },
       "author": {
@@ -127,7 +127,7 @@
       "status": "published",
       "tags": [
       ],
-      "title": "LoRA adapters for GridSFM"
+      "title": "Fine-Tuning GridSFM, Efficiently"
     }
   ]
 }
