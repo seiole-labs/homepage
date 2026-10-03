@@ -10,6 +10,8 @@ coverImage: /images/industrial-pattern.png
 tags: []
 ---
 
+`📄 White paper: LoRA adapters for GridSFM`\
+\
 In the previous [post](https://seiole.com/posts/taking-gridsfm-on-a-spin), we evaluated GridSFM under two regimes: an almost in-distribution (Almost-ID) perturbation set, and a zero-shot topology-and-scale out-of-distribution (OOD) set. Under OOD conditions, error increased substantially across nearly all reported channels relative to Almost-ID.
 
 This pattern is consistent with the authors' own results on their held-out OOD grid (case6470_rte): cost MAPE degraded from 3.35% in-sample to 13.99% under zero-shot evaluation, and the feasibility classifier collapsed entirely (F1 = 0.945 → 0.000). Following 10 epochs of fine-tuning on 1,000 scenarios from the same grid, cost MAPE recovered to 1.12% and feasibility F1 to 0.988.
@@ -24,4 +26,4 @@ This framing holds, but it surfaces a practical constraint: grid topology is str
 
 We reproduced the fine-tuning setup used by the GridSFM authors and substituted a LoRA adapter starting with Feed Forward Layer or full-parameter fine-tuning. With a substantially reduced trainable-parameter count and compute budget, the LoRA adapter matched, and in several metrics exceeded, the fine-tuning results reported in the GridSFM white paper.
 
-We are releasing a white paper and accompanying code for our LoRA adapters for GridSFM alongside this post, beginning with adapters for the model's feed-forward layers. We plan to extend coverage to the remaining layer types in future releases.
+We are releasing a [white paper](https://drive.google.com/file/d/1m7f0flFgW-S32vSzxFTglxbWkHDGxzxV/view?usp=sharing) and accompanying code for our LoRA adapters for GridSFM alongside this post, beginning with adapters for the model's feed-forward layers. We plan to conduct an end-to-end case study benchmarking LoRA adapters on different model layers, across varying numbers of trainable parameters, GPU memory usage, training time, and accuracy for various grid sizes and adaptation tasks.
