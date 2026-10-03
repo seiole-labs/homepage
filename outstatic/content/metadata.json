@@ -1,6 +1,6 @@
 {
-  "commit": "b9f7393f675c2d4750b5772d51a39634778126f8",
-  "generated": "2026-10-03T14:15:06.221Z",
+  "commit": "ff10769e3be0309ec9f140764638e0f4a9503fd9",
+  "generated": "2026-10-03T14:21:16.531Z",
   "metadata": [
     {
       "__outstatic": {
@@ -112,8 +112,8 @@
     },
     {
       "__outstatic": {
-        "commit": "b9f7393f675c2d4750b5772d51a39634778126f8",
-        "hash": "414114655",
+        "commit": "ff10769e3be0309ec9f140764638e0f4a9503fd9",
+        "hash": "2012547098",
         "path": "outstatic/content/posts/lora-adapters-for-gridsfm.md"
       },
       "author": {

@@ -10,8 +10,11 @@ coverImage: /images/industrial-pattern.png
 tags: []
 ---
 
-`📄 White paper: LoRA adapters for GridSFM`[\
-](https://drive.google.com/file/d/1m7f0flFgW-S32vSzxFTglxbWkHDGxzxV/view?usp=sharing)\
+\
+\
+\
+Read the white paper: [LoRA Adapters for GridSFM](https://drive.google.com/file/d/1m7f0flFgW-S32vSzxFTglxbWkHDGxzxV/view?usp=sharing)\
+\
 \
 In the previous [post](https://seiole.com/posts/taking-gridsfm-on-a-spin), we evaluated GridSFM under two regimes: an almost in-distribution (Almost-ID) perturbation set, and a zero-shot topology-and-scale out-of-distribution (OOD) set. Under OOD conditions, error increased substantially across nearly all reported channels relative to Almost-ID.
 
